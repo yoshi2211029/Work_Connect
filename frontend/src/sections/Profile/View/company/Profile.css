@@ -1,0 +1,16 @@
+/* style.css */
+
+
+
+  .information_table td {
+    position:relative;
+    width: 500px;
+    height:10px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+
+
+

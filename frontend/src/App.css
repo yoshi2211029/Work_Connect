@@ -1,0 +1,1003 @@
+body {
+  font-size: 1rem,
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3f6fc;
+  color: #696969;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+}
+
+header .logo {
+  font-size: 30px;
+}
+
+nav ul {
+  margin: 0px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #696969;
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  color: rgb(45, 214, 158);
+}
+
+.logo_Work_Connect {
+  color: #3C98EF;
+  text-align: center;
+}
+
+.Login_Sign_select_C_or_S {
+  cursor: pointer;
+}
+
+/* トップページここから */
+.top_page_app_name {
+  /* position: fixed; */
+  text-align: center;
+  color: rgb(40, 140, 255);
+  top: 0px;
+  z-index: 1101;
+}
+
+.top_page_wrapper {
+  /* background: #D9D9D9; */
+  border-radius: 20px;
+  width: 83.5%;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.top_page_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top_page_content_first {
+  padding: 0px 25px;
+}
+
+/* 作品を投稿して企業から手を差し伸べてもらおう!!!*/
+.top_page_message {
+  overflow-wrap: break-word;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top_page_messege_span {
+  color: #328BFF;
+  font-size: 2.3rem;
+}
+
+.top_page_messege_span_second {
+  font-size: 2.3rem;
+}
+
+.top_page_app_image {
+  background: red;
+  width: 100%;
+  border-radius: 35px;
+}
+
+.top_page_controller {
+  display: flex;
+}
+
+.top_page_button {
+  background-color: white;
+  color: #1877F2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top_page_button:first-child {
+  margin-right: 5px;
+}
+
+/* トップページここまで */
+
+/* 以下、出口記入 */
+.Modal {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 背景色を設定 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1300;
+  /* 必要に応じて調整 */
+}
+
+/* h1 {
+  text-align: center;
+} */
+
+/* モーダルが開いているときは背景がスクロールしないようにする */
+.ReactModal__Body--open {
+  position: fixed;
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
+
+.Modal form {
+  background-color: white;
+  width: 70%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 50px;
+  border: 1px solid #dfdfdf;
+  font-weight: 700;
+}
+
+.loginUiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.loginFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginFormField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.loginFormField input:focus {
+  outline: none;
+}
+
+.loginFormField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+/* .loginUiForm button {
+  background-color: #f3f6fc;
+  width: 100%;
+  //margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+} */
+
+.submitButton {
+  background-color: #f3f6fc;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preSignUpUiForm button {
+  background-color: #f3f6fc;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.signUpUiForm button {
+  background-color: #f3f6fc;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* button:hover {
+  background-color: #175892;
+} */
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.preSignUpFormContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preSignUpFormContainer form {
+  background-color: white;
+  width: 70%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 50px;
+  border: 1px solid #dfdfdf;
+  font-weight: 700;
+}
+
+.preSignUpUiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 250px;
+}
+
+.preSignUpFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.preSignUpFormField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.preSignUpFormField input:focus {
+  outline: none;
+}
+
+.preSignUpFormField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.signUpFormContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpFormContainer form {
+  background-color: white;
+  width: 700%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 50px;
+  border: 1px solid #dfdfdf;
+  font-weight: 700;
+}
+
+.signUpUiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  float: left;
+  justify-content: space-evenly;
+  height: 500px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.signUpUiForm::-webkit-scrollbar {
+  background: white;
+  width: 10px;
+  height: 5px;
+}
+
+.signUpUiForm::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+}
+
+
+.signUpFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signUpFormField input {
+  border: 1px solid grey;
+  padding: 15px;
+  width: 88%;
+  border-radius: 10px;
+}
+
+.signUpFormField input:focus {
+  outline: none;
+}
+
+.signUpFormField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+
+.signUpUiForm .signUpFormField_name {
+  /* float: left; */
+  width: 100%;
+}
+
+.signUpFormField_name input {
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+  width: 40%;
+  margin-right: 10px;
+}
+
+.signUpFormField_name input:focus {
+  outline: none;
+}
+
+.signUpFormField_name label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+/* 作品投稿画面 ここから */
+
+.WorkPostingFormContainer {
+  height: 80vh;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WorkPostingFormContainer form {
+  /* background-color: white; */
+  width: 100%;
+  /* max-width: 600px; */
+  padding: 30px;
+  border-radius: 50px;
+  float: left;
+  /* border: 1px solid #dfdfdf; */
+  font-weight: 700;
+}
+
+.WorkPostingUiForm {
+  position: relative;
+  /* align-items: center; */
+  float: left;
+  justify-content: space-evenly;
+  height: 600px;
+  width: 100%;
+  top: -20%;
+  left: 15%;
+  padding-right: 10px;
+}
+
+.WorkPostingUiForm::-webkit-scrollbar {
+  background: white;
+  width: 10px;
+  height: 5px;
+}
+
+.WorkPostingUiForm::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+}
+
+
+.WorkPostingFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.WorkPostingFormField input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.WorkPostingImageFormField {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.WorkPostingUiForm {
+  display: flex;
+  flex-direction: row;
+  /* float: left; */
+}
+
+.ImageUpload {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  /* padding: 20px; */
+  margin-right: 6px;
+}
+
+.Image {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1 1 0%;
+  padding: 5px 0px;
+}
+
+.WorkInformation {
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  overflow-y: auto;
+  /* background-color: #8b8b8b; */
+  border-radius: 5px;
+  max-width: 600px;
+  flex: 1 1 0%;
+  padding-left: 20px;
+  height: 100%;
+  top: 70px;
+  margin-left: 6px;
+  box-sizing: border-box;
+}
+
+.WorkSubmit {
+  position: relative;
+  float: right;
+  right: -13%;
+  margin-top: 1%;
+  border-radius: 5%;
+  font-size: 16pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 9px 32px;
+  background: #6666ff;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #6666ff;
+}
+
+.WorkSubmit:hover {
+  color: #6666ff;
+  background: #ffffff;
+}
+
+.css-1pv2561-MuiInputBase-root-MuiOutlinedInput-root:hover {
+  border-color: #3399FF;
+}
+
+/* 作品投稿画面 ここまで */
+
+/* 動画投稿画面 ここから */
+
+.VideoPostingFormContainer {
+  height: 80vh;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.VideoPostingFormContainer form {
+  /* background-color: white; */
+  width: 100%;
+  /* max-width: 600px; */
+  padding: 30px;
+  border-radius: 50px;
+  float: left;
+  /* border: 1px solid #dfdfdf; */
+  font-weight: 700;
+}
+
+.VideoPostingUiForm {
+  position: relative;
+  align-items: center;
+  float: left;
+  justify-content: space-evenly;
+  height: 600px;
+  width: 100%;
+  left: 150px;
+  padding-right: 10px;
+}
+
+.VideoPostingUiForm::-webkit-scrollbar {
+  background: white;
+  width: 10px;
+  height: 5px;
+}
+
+.VideoPostingUiForm::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b;
+}
+
+
+.VideoPostingFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.VideoPostingFormField input {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.VideoPostingImageFormField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.VideoPostingUiForm {
+  display: flex;
+  flex-direction: row;
+  /* float: left; */
+}
+
+.VideoInformation {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-y: auto;
+  /* background-color: #8b8b8b; */
+  border-radius: 5px;
+  max-width: 600px;
+  flex: 1 1 0%;
+  padding: 20px;
+  height: 100%;
+  top: 70px;
+  margin-left: 6px;
+  box-sizing: border-box;
+}
+
+.VideoSubmit {
+  position: relative;
+  float: right;
+  right: -8%;
+  margin-top: 1%;
+  border-radius: 5%;
+  font-size: 16pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 9px 32px;
+  background: #6666ff;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  border: 2px solid #6666ff;
+}
+
+.VideoSubmit:hover {
+  color: #6666ff;
+  background: #ffffff;
+}
+
+/* 動画投稿画面 ここまで */
+
+/* 作品一覧画面　ここから */
+/* styles.css */
+.list-view-Container {
+  margin: 20px;
+}
+
+/* 作品アイテムホバー */
+.item-stack {
+  transition: 0.2s;
+
+}
+
+.item-stack:hover {
+  border: 2px solid #989899;
+  transform: scale(1.05); /* 1より小さい数値で縮小 */
+}
+
+
+
+.column-container {
+  column-gap: 20px;
+  column-count: 5;
+  /* デフォルトは5カラム */
+  width: 100%;
+  /* 幅を100%に設定 */
+  max-width: 1600px;
+  /* 最大幅を設定（必要に応じて変更） */
+  margin: 0 auto;
+  /* 中央揃え */
+
+  @media (max-width: 1200px) {
+    column-count: 4;
+  }
+
+  @media (max-width: 900px) {
+    column-count: 3;
+  }
+
+  @media (max-width: 600px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 400px) {
+    column-count: 1;
+  }
+}
+
+.gallery-container {
+  column-gap: 10px;
+  column-count: 5;
+  /* デフォルトは5カラム */
+  width: 100%;
+  /* 最大幅を設定（必要に応じて変更） */
+  margin: 0 auto;
+  /* 中央揃え */
+
+  @media (max-width: 1200px) {
+    column-count: 4;
+  }
+
+  @media (max-width: 900px) {
+    column-count: 3;
+  }
+
+  @media (max-width: 600px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 400px) {
+    column-count: 1;
+  }
+}
+
+
+
+.postCard {
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin: 10px 0px;
+  border-radius: 1cqmin;
+
+  width: "100%";
+  background: white;
+  padding: 5px;
+}
+
+.GalleryPostCard {
+  margin: 0px 0px;
+  border-radius: 20px;
+
+  width: "100%";
+  background: white;
+  padding: 20px;
+}
+
+
+
+
+.link {
+  /* color: white; */
+  color: black;
+
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.custom-color-ring-wrapper {
+  --spinner-animation-duration: 1s;
+  /* デフォルトより速くする */
+}
+
+@keyframes color-ring-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-color-ring-wrapper .color-ring {
+  animation: color-ring-spin var(--spinner-animation-duration) linear infinite;
+}
+
+
+
+
+
+/* 作品一覧画面　ここまで */
+
+/* -- 作品詳細 ここから -- */
+
+/* モーダルスライド ・ ページネーション */
+.inactive-slide {
+  transform: scale(0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.active-slide {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ギャラリーー */
+/* #gallery .gallery_images {
+  height: 94%;
+  overflow-y: scroll;
+  padding-top: 20px;
+  width: 100%;
+} */
+
+/* #gallery .gallery_images .gallery_img {
+  transition: 0.5s all;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  width: 300px;
+} */
+
+.gallery_images {
+  align-items: center;
+  justify-content: center;
+}
+
+/* .gallery_img:hover {
+  border: 4px solid #41a4ff;
+  transform: scale(1.1);
+  transition: 0.5s all;
+} */
+
+
+/* 矢印の大きさを調整 */
+.splide__arrow {
+  width: 50px;
+  /* 幅を設定 */
+  height: 50px;
+  /* 高さを設定 */
+  font-size: 20px;
+  /* 矢印アイコンのサイズ */
+}
+
+/* 左矢印のスタイル */
+/* .splide__arrow--prev {
+  left: -60px;
+  位置調整
+} */
+
+/* 右矢印のスタイル */
+/* .splide__arrow--next {
+  right: -60px;
+  位置調整
+} */
+
+
+/* 作品の紹介・ジャンル・開発言語・開発環境などの項目 */
+.WorkDetail_typo {
+  padding: 20px 0 0 0;
+}
+
+.WorkDetail_info {
+  margin: 10px;
+}
+
+.WorkDetail_info-intro {
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+  width: 100%;
+}
+
+
+.top_comment_area {
+  margin: 0px auto;
+  /* divの隙間をなくす */
+  line-height: 0;
+}
+
+.comment_area_parts {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.comment_text_area {
+  height: 100px;
+  background: #FFFFFF;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  padding: 5px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06); */
+}
+
+.comment_text_area .items {
+  background: #F9FAFB;
+  width: fit-content;
+  height: auto;
+  border: none;
+}
+
+.comment_operation {
+  width: 100%;
+  padding-top: 5px;
+  /* background: #ebebeb; */
+  /* Rectangle 7 */
+}
+
+.comment_button {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.comment_button button {
+  border: none;
+  /* background: #66B2FD; */
+  /* color: #fff; */
+  border: 1px solid #dfdfdf;
+  margin: 5px;
+}
+
+.comment_button button:hover {
+  border: none;
+  /* background: #b4d8fc; */
+  border: 1px solid #dfdfdf;
+  /* color: #fff; */
+  transition: 0.5s;
+}
+
+/* 作品詳細 　ここまで */
+
+
+
+/* 一覧 */
+/* @media (min-width : 600px) {
+  .mediaCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 800px;
+  }
+
+  .itemGrid {
+    width: 28%;
+  }
+} */
+
+
+.item-Link {
+  color: #3C98EF;
+  height: 30;
+  font-size: 16px;
+  font-weight: Bold;
+  padding: 5px;
+}
+
+/* 通知削除ボタン */
+.noticeDeleteButton:hover {
+  cursor: pointer;
+  background-color: #ffcccc;
+}
+
+/* 通知選択ボタン */
+.noticeSelectButton {
+  background-color: transparent;
+  /* 通常時の背景色を透明に設定 */
+  border: none;
+  border-radius: 10px;
+  /* ボーダーを消す */
+  padding: 5px;
+  /* ボタンのクリック領域を確保 */
+  cursor: pointer;
+  /* ホバー時にポインター表示 */
+  transition: background-color 0.3s;
+  /* 背景色の変化を滑らかにする */
+}
+
+.noticeSelectButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* ホバー時に薄暗い背景色を追加 */
+}
+
+.deleteSingleNoticeButton {
+  background-color: transparent;
+  /* 通常時の背景色を透明に設定 */
+  border: none;
+  border-radius: 100%;
+  /* ボーダーを消す */
+  padding: 2px;
+  /* ボタンのクリック領域を確保 */
+  cursor: pointer;
+  /* ホバー時にポインター表示 */
+  transition: background-color 0.3s;
+  /* 背景色の変化を滑らかにする */
+}
+
+.deleteSingleNoticeButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* ホバー時に薄暗い背景色を追加 */
+
+}
+
+
+.deleteSingleNoticeIcon {
+  transition: color 0.8s ease;
+  /* 背景色の変化を滑らかにする */
+}
+
+.deleteSingleNoticeIcon:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+/* 検索バーの虫眼鏡マークをホバーしたときにカーソルをpointerにする */
+.mushimeganeSearch:hover {
+  cursor: pointer;
+}

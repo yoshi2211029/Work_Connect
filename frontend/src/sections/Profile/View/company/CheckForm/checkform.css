@@ -1,0 +1,129 @@
+
+  .answerer-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40%;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-link {
+    margin-right: 8px;
+  }
+
+  .answerer-name {
+    color: black; /* common.blackではなく、blackを直接指定 */
+    height: 30px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .answerer-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .survey-box {
+    width: 400px;
+  }
+
+  .title-box {
+    margin-left: 50px;
+  }
+
+  .form-stack {
+    margin-left: 10px;
+
+  }
+
+  .css-1egy869-MuiList-root{
+    height:100%;
+  }
+
+  .write-form{
+    display: block;
+    border-radius: 8px;
+    padding: 10px 10px 24px;
+    width:100%;
+    margin-left:10%;
+    height: auto;
+    overflow: auto;
+  }
+
+  .summary-form{
+    display: block;
+    border-radius: 8px;
+    padding: 20px 5px 10px 0px;
+    width:100%;
+    margin-left:0%;
+    height: auto;
+    overflow: auto;
+  }
+
+  .writeform-container{
+    border: 1px solid rgb(218, 220, 224);
+    margin-bottom: 12px;
+    margin-left: 10px;
+  }
+
+
+  .writeform-answereddata {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+    color: rgb(32, 33, 36);
+    border-radius: 4px;
+    padding: 10px;
+    white-space: pre-line;
+    cursor: pointer;
+    border-color: inherit;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .writeform-answereddata:hover{
+    background-color: rgba(201, 201, 204, .48);
+  }
+
+  .writeform-title{
+    border: 1px solid rgb(218, 220, 224);
+    border-collapse: collapse;
+    padding: 5px 15px 5px;
+  }
+
+  .writeform-length{
+    font-size: 14px;
+    padding: 5px 15px 5px;
+  }
+
+  .circle_number {
+    width: 20px;
+    height: 20px;
+    padding-top: 0px;
+    background-color:#DA523A; /*  */
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .news-list{
+    border-bottom:1px solid #DAE2ED;
+  }
+
+  .question{
+    width:100%;
+    margin-left: 0%;
+  }
+
+  .question.p{
+    font-size:20px;
+  }
+
+  .title-dropdown{
+    width:80%;
+  }
+

@@ -1,0 +1,1 @@
+export { default as WriteFormView } from './createform-view';

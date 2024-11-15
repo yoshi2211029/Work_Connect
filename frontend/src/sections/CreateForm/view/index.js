@@ -1,0 +1,1 @@
+export { default as CreateFormView } from './createform-view';

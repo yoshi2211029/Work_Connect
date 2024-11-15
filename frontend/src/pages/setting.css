@@ -1,0 +1,76 @@
+/* CSSコード */
+.toggle_input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .toggle_label {
+    width: 55px;
+    height: 30px;
+    background: #fff;
+    border: 3px solid black;
+    position: relative;
+    display: inline-block;
+    border-radius: 40px;
+    transition: 0.4s;
+    box-sizing: border-box;
+  }
+
+  .toggle_label:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    background: black;
+    transition: 0.4s;
+  }
+
+  .toggle_input:checked + .toggle_label {
+
+    border: 3px solid #4BD865;
+  }
+
+  .toggle_input:checked + .toggle_label:after {
+    left: 27px;
+    background: #4BD865;
+  }
+
+  .toggle_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* 親の高さに合わせる */
+  }
+
+  .company_information_table{
+    position: relative;
+    width: 40%;
+    height:10%;
+    border-collapse: collapse;
+  }
+
+
+  td{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .dragging-row {
+  background-color: red;
+}
+
+

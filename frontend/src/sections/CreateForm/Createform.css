@@ -1,0 +1,89 @@
+.TextFormButton {
+  width: 20%;
+}
+
+.TextSetting {
+  position: relative;
+  top: 150px;
+  left: 30%;
+  width: 450px;
+  height: 600px;
+  /* 縦スクロールを可能に */
+  border-width: 2px;
+  padding: 20px;
+  padding-right: 30px; /* 右側の余白を追加 */
+  border: solid 1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+
+
+.SurveyModal {
+  margin-top: 5%;
+  width: 500px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* 縦のオーバーフローは非表示 */
+  margin-left: 20%;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: auto;
+}
+
+
+.sd-root-modern {
+  margin: 0 auto;
+  /* 自動で左右のマージンを設定し、中央揃えにします */
+}
+
+.ReactModal__Content {
+  background-color: transparent !important;
+  /* 背景色を透明に設定 */
+}
+
+.back_news_draft {
+  cursor: pointer;
+  border: solid 1px;
+  /* 必要に応じてピクセル単位で指定 */
+  border-radius: 8px;
+  /* ボタンに少し丸みを追加 */
+  padding: 8px 20px 8px 30px;
+  /* 内側に余白を追加 */
+  width: 35%;
+}
+
+.Form-container {
+  width: 100%;
+}
+
+.FormDemo {
+  overflow: auto;
+  flex-grow: 1;
+  width: 100%;
+  /* 幅を少し狭くする */
+  margin-left: 15%;
+  /* 左マージンを調整 */
+}
+
+.FormMenuScroll {
+  height: 100%; /* 親要素の高さいっぱいに設定 */
+  overflow-y: auto; /* 縦スクロールを可能に */
+  overflow-x: hidden;
+  scrollbar-color: black white;
+  scrollbar-width: thin;
+}
+
+.FormButton{
+  width:30%;
+}
+
+.SelectMenu{
+  margin-top:10px;
+  height:600px;
+}

@@ -1,0 +1,54 @@
+.article-title {
+    color: blueviolet; /* common.blackではなく、blackを直接指定 */
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+    cursor: pointer; /* タイトルにカーソルを合わせた時にポインタを表示 */
+    margin-left: 50%;
+  }
+
+  .answerer-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40%;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-link {
+    margin-right: 8px;
+  }
+
+  .answerer-name {
+    color: black; /* common.blackではなく、blackを直接指定 */
+    height: 30px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .answerer-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .survey-box {
+    width: 400px;
+  }
+
+  .title-box {
+    margin-left: 50px;
+  }
+
+  .form-stack {
+    margin-left: 10px;
+
+  }
+
+  .css-1egy869-MuiList-root{
+    height:100%;
+  }

@@ -1,0 +1,145 @@
+.Table {
+    max-width: 100%;
+    /* 親要素の幅に合わせる */
+    table-layout: auto;
+    /* 列幅を自動調整 */
+}
+
+.Table td,
+.Table th {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 8px;
+}
+
+.tableContainer {
+    width:100%; /* 親要素の幅に合わせる */
+    max-width: 1000px; /* 必要に応じて最大幅を設定 */
+    margin-bottom: 20px; /* テーブル下に余白を追加 */
+}
+
+/* モーダル編集画面 */
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /*　画面の中央に要素を表示させる設定　*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.modal_window {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.Modal_Table textarea {
+    height: auto; /* 高さは自動で調整するように */
+    min-height: 100px; /* 最小の高さを指定（任意） */
+    max-height: 300px; /* 最大の高さを指定（任意） */
+    resize: vertical; /* 垂直方向のリサイズを許可 */
+    box-sizing: border-box; /* パディングとボーダーを含めたサイズ計算 */
+    overflow: auto; /* 内容が溢れた場合は隠す */
+    font-size: 16px; /* フォントサイズを設定 */
+}
+
+/* テキスト入力のスタイル（必要に応じて） */
+.Modal_Table input[type="text"] {
+    padding: 8px; /* 内側の余白を設定 */
+    font-size: 16px; /* フォントサイズを設定 */
+    width: 100%; /* 幅を100%にして親要素にフィットさせる */
+    box-sizing: border-box; /* ボックスのサイズを調整 */
+}
+
+.DragSort{
+    width:120%;
+    background-color: crimson;
+}
+
+.editButtonContainer {
+    display: block; /* フレックスボックスを無効化 */
+    text-align: left; /* ボタンを左揃え */
+    margin-left:100%;
+}
+
+.Modal_Table{
+    max-width: 120%;
+    /* 親要素の幅に合わせる */
+    table-layout: auto;
+    /* 列幅を自動調整 */
+}
+
+.Modal_tableContainer {
+    height: 400px; /* TableContainer全体の高さを設定 */
+    overflow-y: auto; /* 縦方向にスクロール可能にする */
+}
+
+.FixedTableHead {
+    position: sticky;
+    top: 0;
+    background-color: white; /* ヘッダーの背景色 */
+    z-index: 1;
+}
+
+.EditCompanyInformationTableBody {
+    max-height: 300px; /* TableBodyの最大高さ */
+    overflow-y: auto; /* 縦方向のスクロールを有効にする */
+}
+
+.EditCompanyInformation-Accordion{
+    height:100%;
+    width:60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    text-align: left;
+    margin-left:20%;
+    padding-bottom:5px;
+}
+
+.EditTitle{
+    margin-bottom:10px;
+}
+
+.CloseButton{
+    margin-top:1%;
+    margin-left:1%;
+}
+
+.CancelButton {
+    background: none;
+    border: none;
+    font-size: 1004px;
+    cursor: pointer;
+    padding:0;
+}
+
+
+/* ドラッグアイコンとアコーディオン全体を囲むコンテナ */
+.DragSortContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* ドラッグアイコン専用のスタイル */
+.DragIcon {
+    width: 40px; /* 必要に応じて調整 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* AccordionWrapper のスタイルはアコーディオン本体に影響しないように指定 */
+.AccordionWrapper {
+    width: 100%; /* アコーディオン全体の幅を100%に */
+    background-color: crimson; /* 必要に応じて他の背景色に変更 */
+}

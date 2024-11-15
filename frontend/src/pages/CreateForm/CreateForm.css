@@ -1,0 +1,30 @@
+.TextFormButton{
+    width:20%;
+}
+
+.TextSetting{
+    position: relative;
+    top:10px;
+    background-color: aqua;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: auto;
+  }
+
+
+
+  .sd-root-modern {
+    margin: 0 auto; /* 自動で左右のマージンを設定し、中央揃えにします */
+  }
+
+  
+
+
+
+
