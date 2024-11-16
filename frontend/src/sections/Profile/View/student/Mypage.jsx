@@ -93,7 +93,7 @@ const ProfileMypage = () => {
   const childRef = useRef(null);
   const [close, setClose] = useState(true);
   // Laravelとの通信用URL
-  const url = "http://localhost:8000/get_profile_mypage";
+  const url = "http://15.168.241.158/get_profile_mypage";
 
   // ログイン中のuser_nameではない
   // ＊＊＊他ルートからアクセスしたときに表示したいユーザのuser_nameをここで指定＊＊＊
@@ -320,7 +320,7 @@ const ProfileMypage = () => {
           setFollowStatus("フォローされています");
         }
       }
-      const response = await axios.post("http://localhost:8000/followCheck", {
+      const response = await axios.post("http://15.168.241.158/followCheck", {
         sender_id: MyUserId[0],
         recipient_id: profile_id,
       });
@@ -418,7 +418,7 @@ const ProfileMypage = () => {
                   width: 350,
                 },
               }}
-              image={`http://localhost:8000/storage/images/userIcon/${ResponseData.icon}`}
+              image={`http://15.168.241.158/storage/images/userIcon/${ResponseData.icon}`}
             />
           ) : (
             <DefaultIcon

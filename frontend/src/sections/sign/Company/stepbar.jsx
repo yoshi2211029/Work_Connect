@@ -84,7 +84,7 @@ export default function HorizontalLinearStepper({ Stepbar }) {
         stepConnectorLinesArray[activeStep].style.borderTop = "5px solid #1976d2";
       } else {
         // activeStepが2(保存をクリックした場合の処理)
-        const url = "http://localhost:8000/s_register";
+        const url = "http://15.168.241.158/s_register";
 
         const sessionData = getSessionData("accountData");
         const kind = "c";

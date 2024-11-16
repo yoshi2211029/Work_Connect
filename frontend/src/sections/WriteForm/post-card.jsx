@@ -22,7 +22,7 @@ const PostCard = forwardRef(({ post }, ref) => {
     account_id: accountData.id,
   };
 
-  const writeformsaveurl = `http://localhost:8000/write_form_save`;
+  const writeformsaveurl = `http://15.168.241.158/write_form_save`;
 
   useEffect(() => {
     console.log("company_id", company_id);

@@ -15,7 +15,7 @@ function GetTagList() {
   const GetTagListFunction = async (kind) => {
     try {
       if (kind != undefined) {
-        const url = `http://localhost:8000/get_${kind}_tag`;
+        const url = `http://15.168.241.158/get_${kind}_tag`;
         let result;
         result = await axios.get(url, {});
         return result.data;

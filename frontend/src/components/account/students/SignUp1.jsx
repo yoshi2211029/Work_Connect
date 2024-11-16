@@ -31,8 +31,8 @@ const SignUp1 = () => {
   // const [isSubmit, setIsSubmit] = useState(false);
   // const [csrfToken, setCsrfToken] = useState("");
 
-  // const url = "http://localhost:8000/s_login";
-  // const csrf_url = "http://localhost:8000/csrf-token";
+  // const url = "http://15.168.241.158/s_login";
+  // const csrf_url = "http://15.168.241.158/csrf-token";
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -80,7 +80,7 @@ const SignUp1 = () => {
 
   //   //ajax
   //   $.ajax({
-  //     url: url, // アクセスするURL "http://localhost:8000/login"
+  //     url: url, // アクセスするURL "http://15.168.241.158/login"
   //     type: "GET", // POST または GET
   //     cache: false, // cacheを使うか使わないかを設定
   //     dataType: "json", // データタイプ (script, xmlDocument, jsonなど)

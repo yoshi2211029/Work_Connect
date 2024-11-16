@@ -36,13 +36,13 @@ const VideoDetailItem = () => {
   const [VideoGenre, setVideoGenre] = useState("");
 
   // 動画データ
-  const videoDetailUrl = "http://localhost:8000/get_movie_detail";
+  const videoDetailUrl = "http://15.168.241.158/get_movie_detail";
   // 動画コメント投稿
-  const videoCommentPostUrl = "http://localhost:8000/post_movie_comment_post";
+  const videoCommentPostUrl = "http://15.168.241.158/post_movie_comment_post";
   // 動画コメントデータ
-  const videoCommentUrl = "http://localhost:8000/post_movie_comment";
+  const videoCommentUrl = "http://15.168.241.158/post_movie_comment";
   // 動画コメント削除
-  const videoCommentDelete = "http://localhost:8000/post_movie_comment_delete";
+  const videoCommentDelete = "http://15.168.241.158/post_movie_comment_delete";
 
   // Laravel側から動画詳細データを取得
   useEffect(() => {
@@ -105,8 +105,8 @@ const VideoDetailItem = () => {
     <img
       src={
         VideoDetail.icon
-          ? `http://localhost:8000/storage/images/userIcon/${VideoDetail.icon}`
-          : `http://localhost:8000/storage/images/userIcon/subNinja.jpg`
+          ? `http://15.168.241.158/storage/images/userIcon/${VideoDetail.icon}`
+          : `http://15.168.241.158/storage/images/userIcon/subNinja.jpg`
       }
       alt=""
       style={{ width: AVATAR.A_WIDTH, height: AVATAR.A_HEIGHT, borderRadius: AVATAR.A_RADIUS }}

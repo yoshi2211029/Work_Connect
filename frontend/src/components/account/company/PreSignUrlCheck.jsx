@@ -19,8 +19,8 @@ const PreSignUrlCheck = () => {
 
   let GetUrl = new URL(window.location.href);
   let params = GetUrl.searchParams;
-  const url = "http://localhost:8000/s_pre_register_check";
-  const csrf_url = "http://localhost:8000/csrf-token";
+  const url = "http://15.168.241.158/s_pre_register_check";
+  const csrf_url = "http://15.168.241.158/csrf-token";
 
   useEffect(() => {
     async function fetchCsrfToken() {

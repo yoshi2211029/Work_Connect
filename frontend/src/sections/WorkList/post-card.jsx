@@ -36,7 +36,7 @@ const PostCard = forwardRef(({ post }, ref) => {
   const renderAvatar = (
     <Avatar
       alt={author.name}
-      src={icon ? `http://localhost:8000/storage/images/userIcon/${icon}` : author.avatarUrl}
+      src={icon ? `http://15.168.241.158/storage/images/userIcon/${icon}` : author.avatarUrl}
       sx={{
         zIndex: 9,
         width: 30,

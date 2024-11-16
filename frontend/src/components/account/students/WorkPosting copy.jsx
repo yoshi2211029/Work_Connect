@@ -169,7 +169,7 @@ const WorkPosting = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8000/work_posting",
+          "http://15.168.241.158/work_posting",
           formData,
           {
             headers: {

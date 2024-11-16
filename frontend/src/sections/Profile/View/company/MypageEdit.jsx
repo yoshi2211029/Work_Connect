@@ -92,8 +92,8 @@ const ProfileMypageEdit = forwardRef((props, ref) => {
   const { getSessionData , updateSessionData } = useSessionStorage();
 
   // Laravelとの通信用URL
-  const Get_url = "http://localhost:8000/get_profile_mypage";
-  const Post_url = "http://localhost:8000/post_profile_mypage";
+  const Get_url = "http://15.168.241.158/get_profile_mypage";
+  const Post_url = "http://15.168.241.158/post_profile_mypage";
 
   // ログイン中のuser_nameではない
   // ＊＊＊他ルートからアクセスしたときに表示したいユーザのuser_nameをここで指定＊＊＊

@@ -108,7 +108,7 @@ const SelectIcon = ({chatViewIcon}) => {
     <div style={{ display: 'flex', alignItems: 'center' }}>
     {chatViewIcon ? (
       <img
-        src={`http://localhost:8000/storage/images/userIcon/${chatViewIcon}`}
+        src={`http://15.168.241.158/storage/images/userIcon/${chatViewIcon}`}
         alt="User Icon"
         style={{
           width: '40px',
@@ -462,8 +462,8 @@ const ChatView = () => {
   let PrevChatDate = null;
 
   // Laravelとの通信用URL
-  const get_channel_list = "http://localhost:8000/get_channel_list";
-  const get_chat = "http://localhost:8000/get_chat";
+  const get_channel_list = "http://15.168.241.158/get_channel_list";
+  const get_chat = "http://15.168.241.158/get_chat";
 
   /// 画面読み込み後、1度だけ実行
   useEffect(() => {

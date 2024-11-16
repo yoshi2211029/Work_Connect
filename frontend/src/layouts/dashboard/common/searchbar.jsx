@@ -337,7 +337,7 @@ export default function Searchbar() {
     try {
       // console.log("fetchCompanyNameData: OK");
       const response = await axios.get(
-        `http://localhost:8000/get_company_name_list`,
+        `http://15.168.241.158/get_company_name_list`,
         {}
       );
 
@@ -674,9 +674,9 @@ export default function Searchbar() {
     try {
       if (PathName == "/") {
         // 作品一覧の場合
-        // const url = `http://localhost:8000/search_work`;
-        const url = `http://localhost:8000/search_work?page=${Page}&sort=${sortOption}`;
-        // const url = `http://localhost:8000/search_work?page=${Page}&sort=${`;
+        // const url = `http://15.168.241.158/search_work`;
+        const url = `http://15.168.241.158/search_work?page=${Page}&sort=${sortOption}`;
+        // const url = `http://15.168.241.158/search_work?page=${Page}&sort=${`;
         // console.log("searchbar : Page = ", Page);
 
         let follow_status = [];
@@ -743,7 +743,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName == "/VideoList") {
         // 動画一覧の場合
-        const url = `http://localhost:8000/search_video?page=${Page}&sort=${sortOption}`;
+        const url = `http://15.168.241.158/search_video?page=${Page}&sort=${sortOption}`;
 
         let follow_status = [];
         let school_name = [];
@@ -795,7 +795,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName == "/StudentList") {
         // 学生一覧の場合
-        const url = `http://localhost:8000/search_student?page=${Page}`;
+        const url = `http://15.168.241.158/search_student?page=${Page}`;
 
         let follow_status = [];
         let graduation_year = [];
@@ -885,7 +885,7 @@ export default function Searchbar() {
         PathName.endsWith("/work")
       ) {
         // 学生プロフィール内の作品一覧の場合
-        const url = `http://localhost:8000/search_work?page=${Page}&sort=${sortOption}`;
+        const url = `http://15.168.241.158/search_work?page=${Page}&sort=${sortOption}`;
 
         let work_genre = [];
         let programming_language = [];
@@ -926,7 +926,7 @@ export default function Searchbar() {
         PathName.endsWith("/movie")
       ) {
         // 学生プロフィール内の作品一覧の場合
-        const url = `http://localhost:8000/search_video?page=${Page}&sort=${sortOption}`;
+        const url = `http://15.168.241.158/search_video?page=${Page}&sort=${sortOption}`;
 
         let video_genre = [];
 
@@ -952,7 +952,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName == "/CompanyList") {
         // 企業一覧の場合
-        const url = `http://localhost:8000/search_company?page=${Page}`;
+        const url = `http://15.168.241.158/search_company?page=${Page}`;
 
         let follow_status = [];
         let selected_occupation = [];
@@ -1012,7 +1012,7 @@ export default function Searchbar() {
         PathName.endsWith("/JobOffer")
       ) {
         // 企業プロフィール内での求人の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1080,7 +1080,7 @@ export default function Searchbar() {
         PathName.endsWith("/Internship")
       ) {
         // 企業プロフィール内での求人の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1148,7 +1148,7 @@ export default function Searchbar() {
         PathName.endsWith("/Session")
       ) {
         // 企業プロフィール内での求人の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1216,7 +1216,7 @@ export default function Searchbar() {
         PathName.endsWith("/Blog")
       ) {
         // 企業プロフィール内での求人の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1281,7 +1281,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName === "/Internship_JobOffer/JobOffer") {
         // 企業一覧の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1343,7 +1343,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName === "/Internship_JobOffer/Internship") {
         // 企業一覧の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1408,7 +1408,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName === "/Internship_JobOffer/Session") {
         // 企業一覧の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1473,7 +1473,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName === "/Internship_JobOffer/Blog") {
         // 企業一覧の場合
-        const url = `http://localhost:8000/search_internship_job_offer?page=${Page}`;
+        const url = `http://15.168.241.158/search_internship_job_offer?page=${Page}`;
 
         let follow_status = [];
         let company_name = [];
@@ -1537,7 +1537,7 @@ export default function Searchbar() {
         responseItems(responseData);
       } else if (PathName == "/Profile") {
         // 学生一覧の場合
-        const url = `http://localhost:8000/search_company?page=${Page}`;
+        const url = `http://15.168.241.158/search_company?page=${Page}`;
 
         let selected_occupation = [];
         let prefecture = [];

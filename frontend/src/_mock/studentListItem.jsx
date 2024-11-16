@@ -25,7 +25,7 @@ const accountData = getSessionData("accountData");
   };
 
   // dataオブジェクトの中のidを使ってURLを作成
-  const url = `http://localhost:8000/get_student_list/${data.id}`;
+  const url = `http://15.168.241.158/get_student_list/${data.id}`;
 
   // URLをコンソールに出力して確認
   console.log("urlは", url);

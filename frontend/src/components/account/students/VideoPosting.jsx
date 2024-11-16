@@ -112,7 +112,7 @@ const VideoPosting = () => {
       }
       try {
         const response = await axios.post(
-          "http://localhost:8000/video_posting",
+          "http://15.168.241.158/video_posting",
           formData,
           {
             headers: {

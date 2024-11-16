@@ -18,7 +18,7 @@ export const VideoListItem = () => {
   const [MovieOfList, setMovieOfList] = useState([]);
 
   // 動画の一覧データを取得する用URL
-  const url = "http://localhost:8000/get_movie_list";
+  const url = "http://15.168.241.158/get_movie_list";
 
   useEffect(() => {
     // 非同期関数

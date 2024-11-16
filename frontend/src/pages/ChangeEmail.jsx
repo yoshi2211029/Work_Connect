@@ -21,7 +21,7 @@ const ChangeEmail = () => {
     SetPostCheck("送信中...");
     try {
       if (NewEmail === CheckEmail) {
-        const url = `http://localhost:8000/change_email`;
+        const url = `http://15.168.241.158/change_email`;
         const response = await axios.post(url, {
           id: sessionId,
           email: NewEmail,

@@ -96,7 +96,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
   const urlMapping = {
     works: {
       ItemName: "作品一覧",
-      url: "http://localhost:8000/get_work_list",
+      url: "http://15.168.241.158/get_work_list",
       idKey: "work_id",
       tags: ["work_genre"],
       generatePosts: (WorkOfList, key) =>

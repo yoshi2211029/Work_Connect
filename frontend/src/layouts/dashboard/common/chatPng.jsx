@@ -17,7 +17,7 @@ const ChatPng = () => {
   /// セッションストレージ取得
   const { getSessionData } = useSessionStorage();
   // Laravelとの通信用URL
-  const all_unread_chat = "http://localhost:8000/all_unread_chat";
+  const all_unread_chat = "http://15.168.241.158/all_unread_chat";
 
   // テキストの文章を保持する変数
   const [count, setCount] = useState(null);

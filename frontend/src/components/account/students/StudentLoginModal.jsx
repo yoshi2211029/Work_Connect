@@ -37,8 +37,8 @@ const StudentLoginModal = (props) => {
 
   const clickOneTimes = useRef(false); // 一度だけ処理させたい処理を管理するuseRefを作成する
 
-  const url = "http://localhost:8000/s_login";
-  const csrf_url = "http://localhost:8000/csrf-token";
+  const url = "http://15.168.241.158/s_login";
+  const csrf_url = "http://15.168.241.158/csrf-token";
 
   // パスワード表示/非表示の切り替え(パスワード)
   const [showPassword, setShowPassword] = useState("");
@@ -119,7 +119,7 @@ const StudentLoginModal = (props) => {
 
     //ajax
     $.ajax({
-      url: url, // アクセスするURL "http://localhost:8000/login"
+      url: url, // アクセスするURL "http://15.168.241.158/login"
       type: "GET", // POST または GET
       cache: false, // cacheを使うか使わないかを設定
       dataType: "json", // データタイプ (script, xmlDocument, jsonなど)

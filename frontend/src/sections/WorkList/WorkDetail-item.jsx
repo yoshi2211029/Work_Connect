@@ -108,13 +108,13 @@ const WorkDetailItem = () => {
   // モーダルスライドのCSS
 
   // 作品データ
-  const workDetailUrl = "http://localhost:8000/get_work_detail";
+  const workDetailUrl = "http://15.168.241.158/get_work_detail";
   // 作品コメント投稿
-  const workCommentPostUrl = "http://localhost:8000/post_work_comment_post";
+  const workCommentPostUrl = "http://15.168.241.158/post_work_comment_post";
   // 作品コメントデータ
-  const workCommentUrl = "http://localhost:8000/post_work_comment";
+  const workCommentUrl = "http://15.168.241.158/post_work_comment";
   // 作品コメント削除
-  const workCommentDelete = "http://localhost:8000/post_work_comment_delete";
+  const workCommentDelete = "http://15.168.241.158/post_work_comment_delete";
 
   // console.log("currentSlideIndex", currentSlideIndex);
 
@@ -361,8 +361,8 @@ const WorkDetailItem = () => {
     <img
       src={
         workDetail.icon
-          ? `http://localhost:8000/storage/images/userIcon/${workDetail.icon}`
-          : `http://localhost:8000/storage/images/userIcon/subNinja.jpg`
+          ? `http://15.168.241.158/storage/images/userIcon/${workDetail.icon}`
+          : `http://15.168.241.158/storage/images/userIcon/subNinja.jpg`
       }
       alt=""
       style={{ width: AVATAR.A_WIDTH, height: AVATAR.A_HEIGHT, borderRadius: AVATAR.A_RADIUS }}

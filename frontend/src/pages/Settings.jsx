@@ -40,7 +40,7 @@ const Settings = () => {
   //     if (sessionId) {
   //       try {
   //         const response = await axios.get(
-  //           `http://localhost:8000/setting_company_information/${sessionId}`
+  //           `http://15.168.241.158/setting_company_information/${sessionId}`
   //         );
   //         console.log(response.data);
   //         setCompanyInformation(response.data.company_information);
@@ -131,7 +131,7 @@ const Settings = () => {
   //     console.log(row);
   //     try {
   //       const response = await axios.post(
-  //         `http://localhost:8000/company_information/${sessionId}`,
+  //         `http://15.168.241.158/company_information/${sessionId}`,
   //         {
   //           title: row.title,
   //           contents: row.contents,
@@ -180,7 +180,7 @@ const Settings = () => {
   //       console.log("public_status", row.public_status);
   //       try {
   //         const response = await axios.post(
-  //           `http://localhost:8000/company_information/${sessionId}`,
+  //           `http://15.168.241.158/company_information/${sessionId}`,
   //           {
   //             ...(inputName === "title" && { title: value }),
   //             ...(inputName === "contents" && { contents: value }),
@@ -199,7 +199,7 @@ const Settings = () => {
   // const addNewRow = async () => {
   //   const newRowId = `row${rows.length + 1}`;
   //   try {
-  //     const response = await axios.post(`http://localhost:8000/add_new_row/${sessionId}`,
+  //     const response = await axios.post(`http://15.168.241.158/add_new_row/${sessionId}`,
   //       {
   //         title: "新規タイトル",
   //         contents: "新規内容",
@@ -221,7 +221,7 @@ const Settings = () => {
   //     console.log("delete_id", rowId);
   //     try {
   //       const response = await axios.post(
-  //         `http://localhost:8000/row_delete/${sessionId}`,
+  //         `http://15.168.241.158/row_delete/${sessionId}`,
   //         {
   //           delete_id: rowId.replace('row', ''),
   //         }

@@ -106,7 +106,7 @@ const AccountRegistar = forwardRef((props, ref) => {
   // ユーザー名の重複チェック
   const inviteUserNameCheck = (user_name) => {
     // ユーザー名重複チェックのリクエスト用URL
-    const url = "http://localhost:8000/user_name_check";
+    const url = "http://15.168.241.158/user_name_check";
 
     axios
       .get(url, {

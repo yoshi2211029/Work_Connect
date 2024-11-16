@@ -25,7 +25,7 @@ export const CompanyListItem = () => {
   console.log("idは",data.id);
 
   // 企業の一覧データを取得する用URL
-  const url = `http://localhost:8000/get_company_list/${data.id}`;
+  const url = `http://15.168.241.158/get_company_list/${data.id}`;
 
   useEffect(() => {
     async function CompanyListFunction() {

@@ -18,7 +18,7 @@ function InsertTag() {
     if (name != undefined) {
       if (item_id != undefined) {
         await axios.post(
-          "http://localhost:8000/insert_tag",
+          "http://15.168.241.158/insert_tag",
           {
             name: name,
             item_id: item_id

@@ -399,7 +399,7 @@ export default function CreateForm() {
   const CreateFormSave = async () => {
     console.log("フォーム内容", questions);
 
-    const create_form_save_url = `http://localhost:8000/create_form_save`;
+    const create_form_save_url = `http://15.168.241.158/create_form_save`;
 
     try {
       const response = await axios.post(create_form_save_url, {

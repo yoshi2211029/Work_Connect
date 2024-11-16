@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const Environment = (props) => {
   const {InsertTagFunction} = InsertTag();
-  const url = 'http://localhost:8000/get_work_environment_tag'
+  const url = 'http://15.168.241.158/get_work_environment_tag'
   const [options, setOptions] = useState([]);
   useEffect(()=>{
     async function EnvironmentFunction() {

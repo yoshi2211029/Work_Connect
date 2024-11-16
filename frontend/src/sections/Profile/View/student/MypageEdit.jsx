@@ -86,8 +86,8 @@ const ProfileMypageEdit = forwardRef((props, ref) => {
   // useState初期化
   const [close, setClose] = useState(true);
   // Laravelとの通信用URL
-  const Get_url = "http://localhost:8000/get_profile_mypage";
-  const Post_url = "http://localhost:8000/post_profile_mypage";
+  const Get_url = "http://15.168.241.158/get_profile_mypage";
+  const Post_url = "http://15.168.241.158/post_profile_mypage";
 
   // ユーザーネーム取得
   const { user_name } = useParams();

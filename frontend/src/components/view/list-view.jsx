@@ -205,7 +205,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
   const urlMapping = {
     works: {
       ItemName: "作品一覧",
-      url: "http://localhost:8000/get_work_list",
+      url: "http://15.168.241.158/get_work_list",
       idKey: "work_id",
       tags: ["work_genre"],
       generatePosts: (WorkOfList) =>
@@ -228,7 +228,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     movies: {
       ItemName: "動画一覧",
-      url: "http://localhost:8000/get_movie_list",
+      url: "http://15.168.241.158/get_movie_list",
       idKey: "movie_id",
       tags: ["genre"],
       generatePosts: (WorkOfList) =>
@@ -251,7 +251,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     students: {
       ItemName: "学生一覧",
-      url: "http://localhost:8000/get_student_list",
+      url: "http://15.168.241.158/get_student_list",
       idKey: "id",
       tags: [
         "desired_occupation",
@@ -280,7 +280,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     companies: {
       ItemName: "企業一覧",
-      url: "http://localhost:8000/get_company_list",
+      url: "http://15.168.241.158/get_company_list",
       idKey: "id",
       tags: ["selected_occupation", "prefecture"],
       generatePosts: (WorkOfList) =>
@@ -300,7 +300,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     Joboffer: {
       ItemName: "求人一覧",
-      url: `http://localhost:8000/Internship_JobOffer/${SessionAccountData.id}/JobOffer`,
+      url: `http://15.168.241.158/Internship_JobOffer/${SessionAccountData.id}/JobOffer`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) =>
@@ -319,7 +319,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     Internship: {
       ItemName: "インターンシップ一覧",
-      url: `http://localhost:8000/Internship_JobOffer/${SessionAccountData.id}/Internship`,
+      url: `http://15.168.241.158/Internship_JobOffer/${SessionAccountData.id}/Internship`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) =>
@@ -338,7 +338,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     Session: {
       ItemName: "説明会一覧",
-      url: `http://localhost:8000/Internship_JobOffer/${SessionAccountData.id}/Session`,
+      url: `http://15.168.241.158/Internship_JobOffer/${SessionAccountData.id}/Session`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) =>
@@ -357,7 +357,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     Blog: {
       ItemName: "ブログ一覧",
-      url: `http://localhost:8000/Internship_JobOffer/${SessionAccountData.id}/Blog`,
+      url: `http://15.168.241.158/Internship_JobOffer/${SessionAccountData.id}/Blog`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) =>
@@ -376,7 +376,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     writeforms: {
       ItemName: "応募用フォーム",
-      url: `http://localhost:8000/write_form_get/${NewsDetailId}`,
+      url: `http://15.168.241.158/write_form_get/${NewsDetailId}`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -390,7 +390,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     createforms: {
       ItemName: "応募用フォームを作成する",
-      url: `http://localhost:8000/create_form_get/${NewsDetailId}`,
+      url: `http://15.168.241.158/create_form_get/${NewsDetailId}`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -404,7 +404,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialjoboffers: {
       ItemName: `${ParamUserName}さんの求人一覧`,
-      url: `http://localhost:8000/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/JobOffer`,
+      url: `http://15.168.241.158/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/JobOffer`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -424,7 +424,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialinternships: {
       ItemName: `${ParamUserName}さんのインターンシップ一覧`,
-      url: `http://localhost:8000/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Internship`,
+      url: `http://15.168.241.158/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Internship`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -444,7 +444,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialsessions: {
       ItemName: `${ParamUserName}さんの説明会一覧`,
-      url: `http://localhost:8000/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Session`,
+      url: `http://15.168.241.158/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Session`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -464,7 +464,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialblogs: {
       ItemName: `${ParamUserName}さんのブログ一覧`,
-      url: `http://localhost:8000/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Blog`,
+      url: `http://15.168.241.158/Internship_JobOffer/special_company_news/${ParamUserName}/${SessionAccountData.id}/Blog`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -484,7 +484,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialforms: {
       ItemName: `応募フォーム一覧`,
-      url: `http://localhost:8000/special_forms/${SessionAccountData.id}`,
+      url: `http://15.168.241.158/special_forms/${SessionAccountData.id}`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -499,7 +499,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     specialstatisticaldata: {
       ItemName: `応募フォーム一覧(グラフ)`,
-      url: `http://localhost:8000/special_forms/${SessionAccountData.id}`,
+      url: `http://15.168.241.158/special_forms/${SessionAccountData.id}`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {
@@ -514,7 +514,7 @@ export default function ItemObjectAndPostCard({ type, ParamUserName }) {
     },
     companyinformations: {
       ItemName: `${ParamUserName}さんの詳細な企業情報`,
-      url: `http://localhost:8000/company_informations/${ParamUserName}`,
+      url: `http://15.168.241.158/company_informations/${ParamUserName}`,
       idKey: "id",
       tags: ["company_name"],
       generatePosts: (WorkOfList) => {

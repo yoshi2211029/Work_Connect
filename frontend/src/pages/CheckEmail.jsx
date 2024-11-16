@@ -15,7 +15,7 @@ const ChangeEmail = () => {
                 const params = new URLSearchParams(urlObj.search);
 
                 // APIエンドポイントURL
-                const apiUrl = `http://localhost:8000/check_email`; // 'url' の代わりに 'apiUrl' 
+                const apiUrl = `http://15.168.241.158/check_email`; // 'url' の代わりに 'apiUrl' 
                 const response = await axios.post(apiUrl, {
                     kind: params.get("kind"),
                     urltoken: params.get("urltoken"),

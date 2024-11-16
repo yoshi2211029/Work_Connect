@@ -117,7 +117,7 @@ export default function AccountPopover() {
         {popoverIcon ? (
           // アイコンを設定しているとき
           <Avatar
-          src={`http://localhost:8000/storage/images/userIcon/${popoverIcon}`}
+          src={`http://15.168.241.158/storage/images/userIcon/${popoverIcon}`}
           alt={account.displayName}
           sx={{
             width: 36,

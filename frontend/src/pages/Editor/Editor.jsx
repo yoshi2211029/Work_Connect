@@ -86,7 +86,7 @@ const Editor = () => {
   const news_save_url = "http://127.0.0.1:8000/news_save";
   const thumbnail_image_save_url = "http://127.0.0.1:8000/thumbnail_image_save";
 
-  const csrf_url = "http://localhost:8000/csrf-token";
+  const csrf_url = "http://15.168.241.158/csrf-token";
   const navigate = useNavigate();
   const { genre } = useParams();
   console.log(genre);
@@ -229,7 +229,7 @@ const Editor = () => {
   const handleImageUpload = async (file) => {
     const formData = new FormData();
     formData.append('file', file);
-    const contents_image_save_url = "http://localhost:8000/contents_image_save";
+    const contents_image_save_url = "http://15.168.241.158/contents_image_save";
     try {
       const response = await axios.post(contents_image_save_url, formData, {
         headers: {
@@ -347,7 +347,7 @@ const Editor = () => {
       console.log("company_id", sessionId);
       try {
         const response = await axios.post(
-          `http://localhost:8000/rewrite_news_delete`,
+          `http://15.168.241.158/rewrite_news_delete`,
           {
             delete_id: id,
             company_id: sessionId,
@@ -1025,7 +1025,7 @@ const Editor = () => {
   useEffect(() => {
     async function newsDraftList() {
       if (sessionId) {
-        const news_draft_list_url = `http://localhost:8000/news_draft_list/${sessionId}`;
+        const news_draft_list_url = `http://15.168.241.158/news_draft_list/${sessionId}`;
         console.log(news_draft_list_url);
         try {
           const response = await axios.get(news_draft_list_url);
@@ -1091,7 +1091,7 @@ useEffect(() => {
       console.log("fileInputRef.current", fileInputRef.current);
       console.log("value", fileInputRef.current.value);
       fileInputRef.current.value = null; // ファイル入力の値をリセット
-      const header_img_delete_url = `http://localhost:8000/thumbnail_img_delete/${news_id}`;
+      const header_img_delete_url = `http://15.168.241.158/thumbnail_img_delete/${news_id}`;
       console.log(news_id);
       console.log(header_img_delete_url);
       console.log(sessionId);

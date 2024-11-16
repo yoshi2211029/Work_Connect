@@ -23,7 +23,7 @@ export const SpecialCompanyNewsItem = () => {
   console.log("idは",data.id);
 
   // 特定の企業のニュースの一覧データを取得する用URL
-  const url = `http://localhost:8000/Internship_JobOffer/special_company_news/${data.id}`;
+  const url = `http://15.168.241.158/Internship_JobOffer/special_company_news/${data.id}`;
 
   useEffect(() => {
     async function SpecialCompanyNewsFunction() {

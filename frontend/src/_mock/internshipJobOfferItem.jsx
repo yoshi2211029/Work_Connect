@@ -20,7 +20,7 @@
 //   console.log("idは",data.id);
 
 //   // ニュースの一覧データを取得する用URL
-//   const url = "http://localhost:8000/Internship_JobOffer";
+//   const url = "http://15.168.241.158/Internship_JobOffer";
 
 //   useEffect(() => {
 //     async function InternshipJobOfferFunction() {

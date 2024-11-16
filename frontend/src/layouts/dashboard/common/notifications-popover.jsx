@@ -85,7 +85,7 @@ export default function NotificationsPopover() {
     // console.log("NoticeIdNoticeIdNoticeIdNoticeId: ", NoticeId);
     try {
       // 未読通知を既読にする用URL
-      const url = "http://localhost:8000/post_notice_already_read";
+      const url = "http://15.168.241.158/post_notice_already_read";
 
       // console.log("accountData: ", accountData);
       // Laravel側か通知一覧データを取得
@@ -122,7 +122,7 @@ export default function NotificationsPopover() {
       setDeleteNotice((prevNoticeId) => [...prevNoticeId, notificationId]);
 
       // 通知削除用URL
-      const url = "http://localhost:8000/post_notice_delete";
+      const url = "http://15.168.241.158/post_notice_delete";
 
       // Laravel側か通知一覧データを取得
       await axios.post(url, {
@@ -144,7 +144,7 @@ export default function NotificationsPopover() {
       setDeleteNotice((prevNoticeId) => [...prevNoticeId, ...noticeIdArray.map(Number)]);
 
       // 通知削除用URL
-      const url = "http://localhost:8000/post_select_notice_delete";
+      const url = "http://15.168.241.158/post_select_notice_delete";
 
       // Laravel側か通知一覧データを取得
       await axios.post(url, {
@@ -331,7 +331,7 @@ export default function NotificationsPopover() {
     console.log("noticeListFunction");
     try {
       // 通知一覧データを取得する用URL
-      const url = "http://localhost:8000/get_notice";
+      const url = "http://15.168.241.158/get_notice";
 
       // ログインしているアカウントの情報を取得
 
@@ -414,7 +414,7 @@ export default function NotificationsPopover() {
         description = value.message;
         title = value.company_name + "の" + value.category;
       }
-      const avatar = `http://localhost:8000/storage/images/userIcon/${value.icon}`; // ここにアイコンのURLを入れる
+      const avatar = `http://15.168.241.158/storage/images/userIcon/${value.icon}`; // ここにアイコンのURLを入れる
       const type = "friend_interactive";
       const createdAt = value.created_at;
 

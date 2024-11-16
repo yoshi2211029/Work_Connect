@@ -38,7 +38,7 @@ const ImageCard = ({IconData}) => {
       } else if(
         ((SessionData.CompanyIconEditing && SessionData.CompanyIcon && IconData)||
         (!SessionData.CompanyIconEditing && IconData)) &&
-        IconData !== "http://localhost:8000/storage/images/userIcon"
+        IconData !== "http://15.168.241.158/storage/images/userIcon"
       ){
          // DBから最新のデータを取得
          setSelectedImage(IconData);
@@ -72,7 +72,7 @@ const ImageCard = ({IconData}) => {
 
       try {
         // LaravelにPOSTで画像データを送信
-        const response = await fetch('http://localhost:8000/post_profile_mypage_upload', {
+        const response = await fetch('http://15.168.241.158/post_profile_mypage_upload', {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -126,7 +126,7 @@ const ImageCard = ({IconData}) => {
             }
           }}
           image={selectedImage ?
-            `http://localhost:8000/storage/images/userIcon/${selectedImage}` :
+            `http://15.168.241.158/storage/images/userIcon/${selectedImage}` :
             ""}
           alt="Loading..."
         />

@@ -19,8 +19,8 @@ import { useLocation } from 'react-router-dom';
 
 const PostCard = forwardRef(({ post },) => {
   const { title_contents } = post;
-  const CompanyInformationsSaveURL = "http://localhost:8000/company_informations_save";
-  const AllCompanyInformationsPullURL = "http://localhost:8000/all_company_informations_pull";
+  const CompanyInformationsSaveURL = "http://15.168.241.158/company_informations_save";
+  const AllCompanyInformationsPullURL = "http://15.168.241.158/all_company_informations_pull";
   const [MyUserId, setMyUserId] = useState(0);
   const [MyUserName, setMyUserName] = useState("");
   const [showEdit, setShowEdit] = useState(false);
